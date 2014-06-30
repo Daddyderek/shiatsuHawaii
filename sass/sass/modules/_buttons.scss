@@ -1,0 +1,30 @@
+.button {
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 500;
+	padding: 11px 40px;
+	border-radius: 4px;
+	@include font-size(20px);
+	background: $buttonPrime;
+	transition: background 0.2s;
+	&.white {
+		background: white;
+		color: #37BD31;
+	}
+	&.transparent {
+		border: 2.5px solid white;
+		background: transparent;
+		color: white;
+	}
+	&:hover {
+		background: darken($buttonPrime, 5%);
+	}
+}
+.oval {
+	padding: 0 15px;
+	border-radius: 25px;
+}
+
+section .columns a.button {
+	margin-top: 10px;
+}

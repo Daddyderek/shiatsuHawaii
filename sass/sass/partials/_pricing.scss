@@ -1,0 +1,71 @@
+section.pricing {
+	position: relative;
+	text-align: center;
+	padding-top: 7%;
+	padding-bottom: 7%;
+	margin-top: 70px;
+	h2 {
+		margin-top: 0;
+		margin-bottom: 1em;
+		em {
+			color: $buttonSecondary;
+		}
+	}
+	h3 {
+		font-weight: 600;
+		margin-top: 1.5rem;
+		@include font-size(36px);
+	}
+	.columns {
+		border-radius: 4px;
+		@include min-breakpoint(tablet-horizontal) {
+			height: 700px;
+		}
+		&:hover {
+				background-color: $onHover;
+		}
+	}
+	p {
+		line-height: 1.5;
+		font-weight: 300;
+		margin-bottom: 1.75rem;
+		color: #000;
+		@include font-size(24px);
+		em {
+			font-style: normal;
+			font-weight: 600;
+			text-transform: uppercase;
+			color: $saveRed;
+			@include font-size(18px);
+		}
+	}
+	figure {
+		color: $lightTextColor;
+		line-height: 1.5;
+		@include font-size(16px);
+		font-weight: 300;
+	}
+	.columns {
+		padding-top: 50px;
+		padding-bottom: 50px;
+		&:first-child {
+			@include min-breakpoint(tablet-horizontal) {
+				a.button {
+					margin-top: 46px;
+				}
+			}
+		}
+	}
+	a.button {
+		background: $buttonSecondary;
+		padding: 11px 60px;
+    box-shadow: 0 1px 3px 0 rgba(#284C65, 0.5);
+    transform: translateY(0);
+    transition: transform background 0.2s;
+    &:hover {
+			background: darken($buttonSecondary, 3%);
+	    box-shadow: none;
+      transform: translateY(2px);
+    }
+	}
+}

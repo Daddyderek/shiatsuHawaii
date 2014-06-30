@@ -1,0 +1,42 @@
+section.your-music {
+  z-index: 10;
+	padding-bottom: 7%;
+	.columns p {
+		margin-right: 45px;
+	}
+	ul {
+		list-style: none;
+		margin-left: 0;
+		li {
+			padding-right: 25px;
+			img {
+				max-width: 170px;
+				@include min-breakpoint(screen-sm) {
+					max-width: 100%;
+				}
+				&.green-check {
+					max-width: 30px;
+					@include min-breakpoint(screen-sm) {
+						max-width: 100%;
+					}
+				}
+			}
+		}
+	}
+	a.button {
+		@include max-breakpoint(screen-sm) {
+			margin-bottom: 55px;
+		}
+	}
+}
+img.green-check {
+	margin-left: 8%;
+	margin-bottom: 25px;
+	width: 15%;
+	margin-top: 5%;
+
+}
+img.stores {
+	margin-bottom: 15px;
+	width: 70%;
+}

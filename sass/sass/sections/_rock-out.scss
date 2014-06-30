@@ -1,0 +1,137 @@
+section.rock-out {
+	width: 100%;
+	height: 100%;
+  min-height: 500px;
+	font-family: helvetica;
+  background: url('../images/hands-image.jpg') no-repeat center center scroll;
+  @include min-breakpoint(tablet-horizontal) {
+    background: url('../images/hands-image.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  h2 {
+    text-shadow: 0 2px 3px rgba(#284C65, 0.35);
+    color: white;
+    em {
+      color: $headlineTeal;
+    }
+  }
+  .content {
+    top: 10%;
+    @include height-breakpoint(screen-md) {
+      top: 20%;
+    }
+		p {
+			color: $lightTextColor;
+			max-width: 750px;
+      margin: 0.75em auto;
+		}
+		.music-clouds {
+			margin-top: 8%;
+      width: 100%;
+      svg {
+        width: 100%;
+        height: 100%;
+      }
+      @include height-breakpoint(screen-md) {
+        margin-top: 13%;
+      }
+		}
+  }
+}
+
+
+svg.music-clouds, .contain-circle {
+  width: 100%;
+  height: 100%;
+  max-width: 750px;
+  margin: 0 auto;
+  display: block;
+}
+.scale-circle {
+  transform:scale(0.5);
+  transform-origin:center center;
+  border-radius: 50%;
+  float: left;
+  position: relative;
+  width: 5px;
+  height: 5px;
+  top: -12px;
+  @include min-breakpoint(mobile) {
+    width: 6px;
+    height: 6px;
+    top: -14px;
+  }
+  @include min-breakpoint(screen-xs) {
+    width: 8px;
+    height: 8px;
+    top: -20px;
+  }
+  @include min-breakpoint(iphone5-horizontal) {
+    width: 10px;
+    height: 10px;
+    top: -22px;
+  }
+  @include min-breakpoint(screen-sm) {
+    width: 11px;
+    height: 11px;
+    top: -23px;
+  }
+  @include min-breakpoint(screen-md) {
+    width: 12px;
+    height: 12px;
+    top: -25px;
+  }
+}
+.scale-circle.scale0 {
+  background: #E23E55;
+  animation: 1.8s scaleCircle 0.2s cubic-bezier(.1,.55,.34,.84) infinite;
+  left: 15%;
+}
+.scale-circle.scale1 {
+  background: #B436A2;
+  animation: 1.8s scaleCircle 0.4s cubic-bezier(.1,.55,.34,.84) infinite;
+  left: 18%;
+}
+.scale-circle.scale2 {
+  background: #872EEF;
+  animation: 1.8s scaleCircle 0.6s cubic-bezier(.1,.55,.34,.84) infinite;
+  left: 21%;
+}
+.scale-circle.scale3 {
+  background: #872EEF;
+  animation: 1.8s scaleCircle 0.8s cubic-bezier(.1,.55,.34,.84) infinite;
+  left: 39%;
+}
+.scale-circle.scale4 {
+  background: #4593DC;
+  animation: 1.8s scaleCircle 1s cubic-bezier(.1,.55,.34,.84) infinite;
+  left: 42%;
+}
+.scale-circle.scale5 {
+  background: #03F7C9;
+  animation: 1.8s scaleCircle 1.2s cubic-bezier(.1,.55,.34,.84) infinite;
+  left: 45%;
+}
+.scale-circle.scale6 {
+  background: #03F7C9;
+  animation: 1.8s scaleCircle 1.4s cubic-bezier(.1,.55,.34,.84) infinite;
+  left: 64%;
+}
+.scale-circle.scale7 {
+  background: #7CD368;
+  animation: 1.8s scaleCircle 1.6s cubic-bezier(.1,.55,.34,.84) infinite;
+  left: 67%;
+}
+.scale-circle.scale8 {
+  background: #F4B006;
+  animation: 1.8s scaleCircle 1.8s cubic-bezier(.1,.55,.34,.84) infinite;
+  left: 70%;
+}
+@keyframes scaleCircle {
+  0%, 100% {
+    transform:scale(0.5);
+  }
+  50% {
+    transform:scale(1.25);
+  }
+}
