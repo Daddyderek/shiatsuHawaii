@@ -1,34 +1,11 @@
 footer {
-	background-color: #24292A;
-	text-align: center;
-	position: relative;
-	z-index: 10;
-	ul {
-		padding-top: 50px;
-		padding-bottom: 50px;
-		list-style: none;
-		margin: 0 auto;
-		li {
-			display: inline-block;
-			margin: 0 20px;
-		}
-	}
-	.dark {
-		background-color: #181B1C;
-		.dark-distro-logo {
-			margin-top: 40px;
-		}
+	background-color: $footerBg;
+	.row {
+		text-align: center;
 		ul {
-			padding-top: 20px;
+			list-style: none;
 			li {
-				a {
-					font-size: 12px;
-					font-weight: 600;
-				}
-				.fa-twitter {
-					color: #2D9EC2;
-					margin-right: 2px;
-				}
+				display: inline-block;
 			}
 		}
 	}

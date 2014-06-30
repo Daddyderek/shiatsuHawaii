@@ -24,13 +24,13 @@
 
 // Modules
 // ---------------------------------------------------
-@import "sass/modules/buttons";
-@import "sass/modules/forms";
-@import "sass/modules/headings";
-@import "sass/modules/images";
-@import "sass/modules/links";
-@import "sass/modules/circles";
-@import "sass/modules/dropdown";
+// @import "sass/modules/buttons";
+// @import "sass/modules/forms";
+// @import "sass/modules/headings";
+// @import "sass/modules/images";
+// @import "sass/modules/links";
+// @import "sass/modules/circles";
+// @import "sass/modules/dropdown";
 
 // Page Styles
 // ---------------------------------------------------
@@ -39,15 +39,13 @@
 @import "sass/partials/header";
 @import "sass/partials/footer";
 @import "sass/partials/navigation";
-@import "sass/partials/pricing";
-@import "sass/partials/ab-testing";
 @import "sass/partials/footer";
 // Sections
-@import "sass/sections/get-started";
-@import "sass/sections/your-music";
-@import "sass/sections/get-paid";
-@import "sass/sections/rock-out";
-@import "sass/sections/be-prolific";
+@import "sass/sections/welcome";
+// @import "sass/sections/your-music";
+// @import "sass/sections/get-paid";
+// @import "sass/sections/rock-out";
+// @import "sass/sections/be-prolific";
 
 // Typography
-@import "sass/modules/fonts";
+// @import "sass/modules/fonts";

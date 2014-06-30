@@ -3,12 +3,13 @@
 
 // Fonts
 // -------------------------
-$baseFontFamily: "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$baseFontFamily: 'Lato', sans-serif;;
 
 // Font-Weight
 // -------------------------
+$weightLight: 300;
 $weightNormal: 400;
-$weightBold: 600;
+$weightBold: 700;
 
 // Font Path
-$FontPath: "../../../font" !default;
+$FontPath: "../../font" !default;
