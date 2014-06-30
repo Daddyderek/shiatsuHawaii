@@ -1,4 +1,9 @@
 html {
+	font-family: $baseFontFamily;
+	.row.full-width {
+		width: 85%;
+		max-width: 100%;
+	}
   // @include min-breakpoint(screen-xs) {
   //   font-size: 12px;
   // }
