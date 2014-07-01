@@ -2,9 +2,19 @@ extends partials/layout
 block content
 	section.slide-show
 		.row.full-width
-			.small-12.columns
-				#slider
-
+			.wrapper
+				.medium-8.columns
+					div.slide
+						div
+							img(src="/images/homepage_massage.jpg", data='1', alt="Massage Therapy")
+						div
+							img(src="/images/homepage_kinesio.jpg", data='2', alt="Kinesio Therapy")
+						div
+							img(src="/images/homepage_rom.jpg", data='3', alt="Rom Therapy")
+				.medium-4.columns
+					h5 EXERCISE:
+					h2 #{title}
+					p #{content}
 	section.welcome
 		.row.full-width
 			.medium-7.columns
