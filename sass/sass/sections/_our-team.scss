@@ -7,6 +7,17 @@ section.our-team {
 		border-right: solid $footerFont;
 		border-width: 2px;
 	}
+	.large-7.columns {
+		h1 {
+			margin-bottom: 65px;
+		}
+		h5 {
+			margin-bottom: 30px;
+		}
+		p {
+			margin-bottom: 30px;
+		}
+	}
 	div.contact {
 		background-color: $welcomeBg;
 		height: 100%;
@@ -15,9 +26,13 @@ section.our-team {
 			padding: 20px 40px;
 		}
 	}
-	.medium-7.columns {
+	.large-7.columns {
 		p:last-child {
 			margin-bottom: 200px;
+		}
+	}
+	@include max-breakpoint(tablet-horizontal) {
+		.large-7.columns {
 		}
 	}
 }
