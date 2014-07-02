@@ -1,2 +1,33 @@
 section.slide-show {
+	margin-top: 10px;
+	margin-bottom: 50px;
+	p {
+		@include font-size(12px);
+	}
+	a {
+		@include font-size(14px);
+	}
+	.row.full-width {
+		border: 6px solid $teal;
+	}
+	.slick-slide img {
+		width: 100%;
+	}
+	div.slide.slick-initialized.slick-slider {
+		@include min-breakpoint(tablet-horizontal) {
+			margin-left: -15px;
+		}
+		@include max-breakpoint(screen-sm) {
+			margin-left: -15px;
+		}
+		@include min-breakpoint(screen-sm) {
+			margin-bottom: 0;
+		}
+		@include max-breakpoint(screen-sm) {
+			margin-right: -15px;
+		}
+	}
+	.large-7.colums {
+		text-align: center;
+	}
 }
