@@ -7,6 +7,9 @@ section.welcome {
 	p {
 		@include font-size(17px);
 	}
+	h5 {
+		margin-bottom: -5px;
+	}
 	a {
 		color: $teal;
 	}
@@ -16,13 +19,18 @@ section.welcome {
 	.medium-5.columns {
 		margin: 5% 0;
 	}
-	div.contact {
+	.contact {
 		background-color: white;
 		height: 100%;
 		border-radius: 4px;
 		div {
-			margin-left: 20px;
-			padding: 20px 40px;
+			margin: 10px 0 -20px 20px;
+			padding: 20px 20px;
+		}
+	}
+	@include min-breakpoint(screen-lg) {
+		.contact {
+			margin-left: 70px;			
 		}
 	}
 	@include min-breakpoint(screen-sm) {

@@ -17,13 +17,13 @@ nav.top-bar {
 			background-color: transparent;
 			margin-right: 10px;
 			a {
-				padding: 1px 25px;
+				padding: 0 20px;
 				text-align: center;
 				@include font-size(14px);
 				color: $tealFont;
 				background-color: $btnBg;
 				border: 2px solid $teal;
-				border-radius: 5px;
+				border-radius: 3px;
 				line-height: 2;
 				&:hover {
 					background-color: $teal;
