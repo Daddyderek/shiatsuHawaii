@@ -1,13 +1,17 @@
 $(function() {
 
-	$('.slide').slick({
+	slickSlide('.slide', 700);
+	slickSlide('.slide-text', 300);
+}); // $(function)
+
+function slickSlide(elem, speed) {
+	$(elem).slick({
 		infinite			: true,
-		speed 				: 500,
+		speed 				: speed,
 		arrows				: false,
 		fade					: true,
 		swipe					: true,
 		autoplay 			: true,
-		autoplaySpeed : 5000
+		autoplaySpeed : 8000
 	});
-
-}); // $(function)
+}
