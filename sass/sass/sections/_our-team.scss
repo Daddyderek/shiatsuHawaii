@@ -1,14 +1,15 @@
 section.our-team {
-	p, h1, h2, h4, h5 {
+	p, h1, h3, h5 {
 		font-weight: $weightLight;
 		color: $footerBg;
 	}
 	hr {
 		border-right: solid $footerFont;
-		border-width: 2px;
+		border-width: 1px;
 	}
-	.large-7.columns {
+	.large-8.columns {
 		h1 {
+			margin-top: 40px;
 			margin-bottom: 65px;
 		}
 		h5 {
@@ -18,21 +19,36 @@ section.our-team {
 			margin-bottom: 30px;
 		}
 	}
-	div.contact {
+	.contact {
 		background-color: $welcomeBg;
 		height: 100%;
 		border-radius: 4px;
+		margin-right: -10px;
+		margin-top: 40px;
 		div {
 			padding: 20px 40px;
+			h3 {
+				margin-top: -2px;
+			}
+			p:last-child {
+				margin-bottom: -2px;
+			}
 		}
 	}
-	.large-7.columns {
+	.large-8.columns {
 		p:last-child {
 			margin-bottom: 200px;
 		}
 	}
 	@include max-breakpoint(tablet-horizontal) {
-		.large-7.columns {
+		.large-8.columns {
+			h1 {
+				background-color: $welcomeBg;
+				margin: -19px -88px 65px -86px;
+				text-align: center;
+				height: 100px;
+				line-height: 2;
+			}
 		}
 	}
 }
