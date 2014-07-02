@@ -1,11 +1,15 @@
 section.slide-show {
+	p, h3, h6 {
+		font-weight: $weightLight;
+		color: $darkGr;
+	}
 	margin-top: 10px;
 	margin-bottom: 50px;
 	p {
-		@include font-size(12px);
+		@include font-size(14px);
 	}
 	a {
-		color: $darkGr;
+		color: $footerBg;
 		@include font-size(14px);
 	}
 	.row.full-width {
@@ -14,30 +18,17 @@ section.slide-show {
 	.slick-slide img {
 		width: 100%;
 	}
-	div.slide.slick-initialized.slick-slider {
-		@include min-breakpoint(tablet-horizontal) {
-			margin-left: -15px;
-		}
-		@include max-breakpoint(screen-sm) {
-			margin-left: -15px;
-		}
-		@include min-breakpoint(screen-sm) {
-			margin-bottom: 0;
-		}
-		@include max-breakpoint(screen-sm) {
-			margin-right: -15px;
+	.small-12.columns {
+		background-color: $welcomeBg;
+		position: absolute;
+		bottom: 0;
+	}
+	.large-7.columns {
+		div.slide.slick-initialized.slick-slider {
+			margin: 0 -15px 0 -15px;
 		}
 	}
 	.large-5.columns {
-		div.slide {
-			@include min-breakpoint(screen-lg) {
-				margin-top: 30px;
-			}
-			@include min-breakpoint(tablet-horizontal) {
-				margin-top: 5px;
-			}
-			margin-left: 10px;
-			margin-right: 10px;
-		}
+		position: relative;
 	}
 }

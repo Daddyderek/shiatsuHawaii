@@ -1,20 +1,28 @@
 extends partials/layout
 block content
 	section.slide-show
-		.row.full-width
-			.large-7.columns
-				div.slide
-					div
-						img(src="/images/homepage_massage.jpg", alt="Massage Therapy")
-					div
-						img(src="/images/homepage_kinesio.jpg", alt="Kinesio Therapy")
-					div
-						img(src="/images/homepage_rom.jpg", alt="Rom Therapy")
-			.large-5.columns
-				.row
+		strong.show-for-small-only
+			div.slide
+				div
+					img(src="/images/homepage_massage.jpg", alt="Massage Therapy")
+				div
+					img(src="/images/homepage_kinesio.jpg", alt="Kinesio Therapy")
+				div
+					img(src="/images/homepage_rom.jpg", alt="Rom Therapy")
+		strong.show-for-medium-up
+			.row.full-width
+				.large-7.columns
 					div.slide
-						div 
-							h6 THE VERY BEST IN 
+						div
+							img(src="/images/homepage_massage.jpg", alt="Massage Therapy")
+						div
+							img(src="/images/homepage_kinesio.jpg", alt="Kinesio Therapy")
+						div
+							img(src="/images/homepage_rom.jpg", alt="Rom Therapy")
+				.large-4.columns
+					div.slide
+						div
+							h6 THE VERY BEST IN
 							h3 Massage Therapy
 							p Since 1984, our clinic has led the way in the treatment of soft tissue pain &amp; injuries using the most effective massage therapy techniques: Shiatsu, Myofascial Release, Structural Balancing, Soft Tissue Release, &amp; Kinesio Taping.
 							p Browse the website to find out more about our services and schedule an appointment with us!
@@ -25,6 +33,7 @@ block content
 							h3 Kinesio Taping
 							P Kinesio Taping is a fast &amp; effective elastic therapeutic taping method that allows us to treat a wide range of injuries using a tool that mimics our massage therapy.
 							p In 2001, we were one of the first massage clinics in Hawaii to use Kinesio Taping as part of our therapy &amp; we have led the way ever since.
+							strong.show-for-medium-up
 							.small-12.columns
 								a(href="#") KINESIO TAPING
 						div
@@ -48,7 +57,9 @@ block content
 								h4 Contact Us
 								p Call 
 									a(href="tel:808-843-8006") 808.843.8006 
-									| to schedule an appointment. Our clinic is located at:
+									| to schedule an
+									br
+									| appointment. Our clinic is located at:
 								p City Square (Kalihi)
 									br
 									| 1199 Dillingham Blvd.C106

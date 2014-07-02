@@ -3,11 +3,25 @@ footer {
 	color: $footerFont;
 	.row {
 		text-align: center;
-		ul {
-			list-style: none;
-			padding-top: 40px;
-			li {
-				display: inline-block;
+	}
+	ul {
+		list-style: none;
+		padding-top: 40px;
+	}
+	li {
+		display: inline-block;
+	}
+	a {
+		color: $teal;
+	}
+	@include min-breakpoint(iphone5-horizontal) {
+		li {
+			border-right: 1px solid $footerFont;
+			&:last-child {
+				border-right: none;
+			}
+			p {
+				margin: 0 10px;
 			}
 		}
 	}

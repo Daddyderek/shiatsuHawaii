@@ -1,17 +1,17 @@
 section.welcome {
 	background-color: $welcomeBg;
-	.medium-7.columns {
-		color: $footerBg;
+	p, h2, h4, h5, {
 		font-weight: $weightLight;
+		color: $darkGr;
+	}
+	p {
+		@include font-size(17px);
+	}
+	a {
+		color: $teal;
+	}
+	.medium-7.columns {
 		margin: 5% 0;
-		h5 {
-			color: $footerBg;
-			font-weight: $weightLight;
-		}
-		h2 {
-			color: $footerBg;
-			font-weight: $weightLight;
-		}
 	}
 	.medium-5.columns {
 		margin: 5% 0;
@@ -21,6 +21,7 @@ section.welcome {
 		height: 100%;
 		border-radius: 4px;
 		div {
+			margin-left: 20px;
 			padding: 20px 40px;
 		}
 	}
