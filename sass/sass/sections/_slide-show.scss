@@ -5,6 +5,7 @@ section.slide-show {
 		@include font-size(12px);
 	}
 	a {
+		color: $darkGr;
 		@include font-size(14px);
 	}
 	.row.full-width {
@@ -27,7 +28,16 @@ section.slide-show {
 			margin-right: -15px;
 		}
 	}
-	.large-7.colums {
-		text-align: center;
+	.large-5.columns {
+		div.slide {
+			@include min-breakpoint(screen-lg) {
+				margin-top: 30px;
+			}
+			@include min-breakpoint(tablet-horizontal) {
+				margin-top: 5px;
+			}
+			margin-left: 10px;
+			margin-right: 10px;
+		}
 	}
 }

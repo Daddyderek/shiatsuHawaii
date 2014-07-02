@@ -1,13 +1,30 @@
 section.welcome {
 	background-color: $welcomeBg;
 	.medium-7.columns {
-		padding: 5% 5%;
+		margin: 5% 0;
 	}
 	.medium-5.columns {
-		padding: 5% 5%;
+		margin: 5% 0;
+	}
+	div.contact {
+		background-color: white;
+		height: 100%;
+		border-radius: 4px;
 		div {
-			padding-left: 20px;
-			background-color: white;
+			padding: 20px 40px;
+		}
+	}
+	@include min-breakpoint(screen-sm) {
+		.medium-7.columns {
+			margin-left: -15px;
+		}
+		.medium-5.columns {
+			margin-right: -15px;
+		}
+	}
+	@include max-breakpoint(screen-sm) {
+		h5, h2 {
+			text-align: center;
 		}
 	}
 }
