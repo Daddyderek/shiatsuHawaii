@@ -1,9 +1,11 @@
 footer {
 	background-color: $footerBg;
+	color: $footerFont;
 	.row {
 		text-align: center;
 		ul {
 			list-style: none;
+			padding-top: 40px;
 			li {
 				display: inline-block;
 			}

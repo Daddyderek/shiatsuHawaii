@@ -1,0 +1,23 @@
+section.our-team {
+	p, h1, h2, h4, h5 {
+		font-weight: $weightLight;
+		color: $footerBg;
+	}
+	hr {
+		border-right: solid $footerFont;
+		border-width: 2px;
+	}
+	div.contact {
+		background-color: $welcomeBg;
+		height: 100%;
+		border-radius: 4px;
+		div {
+			padding: 20px 40px;
+		}
+	}
+	.medium-7.columns {
+		p:last-child {
+			margin-bottom: 200px;
+		}
+	}
+}

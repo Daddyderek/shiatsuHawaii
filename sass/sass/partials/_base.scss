@@ -1,5 +1,7 @@
 html {
-	font-family: $baseFontFamily;
+  p, h1, h2, h3, h4, h5, h6 {
+    font-family: $baseFontFamily;    
+  }
 	.row.full-width {
 		width: 85%;
 		max-width: 100%;
