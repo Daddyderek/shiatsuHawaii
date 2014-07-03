@@ -1,7 +1,8 @@
 $(function() {
 
-	slickSlide('.slide', 700);
+	slickSlide('.slide', 600);
 	slickSlide('.slide-text', 300);
+	
 }); // $(function)
 
 function slickSlide(elem, speed) {

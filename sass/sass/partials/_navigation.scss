@@ -1,15 +1,27 @@
+div#navBar.row.full-width {
+	@include max-breakpoint(screen-xs) {
+		width: 100%;
+	}
+}
 nav.top-bar {
-	margin: 3% -5px;
+	margin: 3% -10px 3% 0;
 	background-color: transparent;
 
 	.expanded .title-area {
 		background-color: transparent;
 	}
-	.menu-icon a span {
-		color: black;
-	}
 	li.logo {
 		margin-top: -10px;
+		@include max-breakpoint(screen-xs) {
+			margin-left: 15px;
+		}
+	}
+	.menu-icon a span {
+		color: $hamburgerColor;
+		@include font-size(30px);
+		@include max-breakpoint(screen-xs) {
+			margin-right: 15px;
+		}
 	}
 	section.top-bar-section ul.right {
 		margin-top: 5px;

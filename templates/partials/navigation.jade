@@ -1,12 +1,15 @@
-.row.full-width
+#navBar.row.full-width
   nav.top-bar(data-topbar)
     ul.title-area
       li.logo
         a(href='#') 
-          img(src="images/logo.png", alt="Shiatsu Hawaii Logo")
+          strong.show-for-medium-up
+            img(src="images/logo.png", alt="Shiatsu Hawaii Logo")
+          strong.hide-for-medium-up
+            img(src="images/logoMobile.png", alt="Shiatsu Hawaii Logo")
       li.toggle-topbar.menu-icon
         a(href="#")
-          span Menu
+          span &#9776;
     section.top-bar-section
       ul.right
         li
