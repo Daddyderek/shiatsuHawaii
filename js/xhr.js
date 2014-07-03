@@ -1,18 +1,12 @@
 $(function() {
-
-	slickSlide('.slide', 500);
-	slickSlide('.slide-text', 300);
-	
-}); // $(function)
-
-function slickSlide(elem, speed) {
-	$(elem).slick({
+	$('.slide').slick({
 		infinite			: true,
-		speed 				: speed,
+		speed 				: 300,
 		arrows				: false,
 		fade					: true,
 		swipe					: true,
 		autoplay 			: true,
 		autoplaySpeed : 6000
 	});
-}
+	
+}); // $(function)

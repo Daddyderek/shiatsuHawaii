@@ -4,7 +4,9 @@ section.slide-show {
 		color: $darkGr;
 	}
 	margin-top: 10px;
-	margin-bottom: 50px;
+	@include min-breakpoint(screen-sm) {
+		margin-bottom: 50px;		
+	}
 	p {
 		@include font-size(14px);
 	}
@@ -20,20 +22,38 @@ section.slide-show {
 	}
 	.small-12.columns {
 		background-color: $welcomeBg;
+		font-weight: $weightLight;
 		height: 50px;
 		line-height: 3;
+		@include max-breakpoint(screen-sm) {
+			background-color: white;
+			text-align: center;
+			a {
+				margin: 5px 0 0 20px;
+			}
+		}
 	}
 	div.slide.slick-initialized.slick-slider {
 		margin: 0 -15px 0 -15px;
 	}
-	div.slide-text.slick-initialized.slick-slider {
-		margin: 0 -15px 0 -15px;
-		@include min-breakpoint(tablet-horizontal) {
-			height: 330px;			
+	.large-4.coulmns {
+		div.slide.slick-initialized.slick-slider {
+			margin: 0 -14px 0 -14px;
+			@include min-breakpoint(tablet-horizontal) {
+				height: 330px;			
+			}
 		}
 	}
 	.description {
 		width: 80%;
+		margin-top: 20px;
 		margin-left: 30px;
+	}
+	.arrow-right {
+		float: right;
+		margin: 18px 10px 0 0;
+		border-top: 7px solid transparent;
+		border-bottom: 7px solid transparent;	
+		border-left: 7px solid $rightArrow;
 	}
 }
