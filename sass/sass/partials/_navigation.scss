@@ -4,14 +4,13 @@ div#navBar.row.full-width {
 	}
 }
 nav.top-bar {
-	margin: 3% -10px 3% 0;
+	margin: 3% -10px 1% 0;
 	background-color: transparent;
-
+	height: 58px;
 	.expanded .title-area {
 		background-color: transparent;
 	}
 	li.logo {
-		margin-top: -10px;
 		@include max-breakpoint(screen-xs) {
 			margin-left: 15px;
 		}
@@ -24,7 +23,7 @@ nav.top-bar {
 		}
 	}
 	section.top-bar-section ul.right {
-		margin-top: 5px;
+		margin-top: 15px;
 		li {
 			background-color: transparent;
 			margin-right: 10px;
@@ -40,6 +39,9 @@ nav.top-bar {
 				&:hover {
 					background-color: $teal;
 					color: white;
+				}
+				@include max-breakpoint(tablet-horizontal) {
+
 				}
 			}
 		}

@@ -1,6 +1,6 @@
 $(function() {
 
-	slickSlide('.slide', 600);
+	slickSlide('.slide', 500);
 	slickSlide('.slide-text', 300);
 	
 }); // $(function)
@@ -13,6 +13,6 @@ function slickSlide(elem, speed) {
 		fade					: true,
 		swipe					: true,
 		autoplay 			: true,
-		autoplaySpeed : 8000
+		autoplaySpeed : 6000
 	});
 }
