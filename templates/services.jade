@@ -1,24 +1,32 @@
 extends partials/layout
 block content
 	section.services.tabs
-		div.show-for-small-only
-		div.show-for-medium-up
-
+		div.show-for-large-up
+			.row.full-width
+				.small-12.columns
+					ul
+						li 
+							a(href="#") SHIATSU &amp; BODY WORK
+						li 
+							a(href="#") KINISEO TAPING
+						li
+							a(href="#") THE ROM MACHINE
+						li 
+							a(href="#") NUTRITION: SUNRIDER
+							
 	section.services.slide-show
 		div.show-for-small-only
+			hr
 			div.slide
 				div
+					h3 Massage Therapy
 					img(src="/images/homepage_massage.jpg", alt="Massage Therapy")
-					.small-12.columns
-						a(href="#") SHIATSU MASSAGE
 				div
+					h3 Kinesio Taping
 					img(src="/images/homepage_kinesio.jpg", alt="Kinesio Therapy")
-					.small-12.columns
-						a(href="#") KINESIO TAPING
 				div
+					h3 Exercise: The Rom Machine
 					img(src="/images/homepage_rom.jpg", alt="Rom Therapy")
-					.small-12.columns
-						a(href="#" ) THE ROM MACHINE
 		div.show-for-medium-up
 			.row.full-width
 				ul.example-orbit(data-orbit)
@@ -46,6 +54,8 @@ block content
 				div.show-for-medium-up
 					h2 WELCOME TO
 				p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed sodales elementum metus, eget adipiscing tortor condimentum sed. Phasellus auctor massa sit amet justo sollicitudin aliquet. Proin pulvinar adipiscing dolor ac porttitor. Nunc fringilla sapien tempus quam ultrices elementum. Vestibulum molestie tempus purus, sit amet venenatis lectus facilisis eu. Sed diam nunc, euismod ac imperdiet sit amet, interdum at ligula. Integer at molestie neque.
+				.row.show-for-small-only
+					hr
 				h3 Next: Nutrition: Sunrider
 			div.show-for-medium-up
 				.medium-4.columns

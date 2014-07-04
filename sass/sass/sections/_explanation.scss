@@ -1,4 +1,12 @@
 section.services.explanation {
+	padding-top: 80px;
+	.medium-8.columns {
+		padding-left: 0;
+		.row.show-for-small-only hr {
+			border: 1px solid $lightGr;
+			margin: 0 -30px;
+		}
+	}
 	.medium-4.columns {
 		background-color: white;
 	}

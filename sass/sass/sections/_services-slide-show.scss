@@ -1,6 +1,19 @@
 section.services.slide-show {
 	margin: 0;
+	@include max-breakpoint(screen-sm) {
+		background-color: white;
+		margin-bottom: -80px;
+	}
 	.row.full-width {
 		background-color: white;
+	}
+	.show-for-small-only {
+		div {
+			text-align: center;
+		}
+		h3 {
+			@include font-size(25px);
+			margin-bottom: 25px;
+		}
 	}
 }

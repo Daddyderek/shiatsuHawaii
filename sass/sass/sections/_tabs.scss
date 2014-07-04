@@ -1,3 +1,36 @@
 .services {
 	background-color: $welcomeBg;
+	p, h2, h3, h6, a {
+		color: $darkGr;
+		font-family: $baseFontFamily;
+	}
+	h2, h3, h6 {
+		font-weight: $weightLight;
+	}
+}
+section.services.tabs {
+	ul {
+		height: 100px;
+		margin-left: 0;
+		list-style: none;
+	}
+	.small-12.columns {
+		padding: 0;
+	}
+	li {
+		@include font-size(18px);
+		display: inline-block;
+		margin-right: 10px;
+		line-height: 7;
+	}
+	.show-for-large-up {
+		li a {
+			padding: 15px;
+			&:hover {
+				background-color: $navLines;
+				padding: 15px;
+				border-radius: 4px;
+			}
+		}
+	}
 }

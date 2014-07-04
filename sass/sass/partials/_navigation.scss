@@ -4,7 +4,12 @@ div#navBar.row.full-width {
 	}
 }
 nav.top-bar {
-	margin: 3% -10px 3.5% 0;
+	@include min-breakpoint(screen-xs) {
+		margin: 3% -10px 3.5% 0;
+	}
+	@include max-breakpoint(screen-xs) {
+		margin-bottom: -15px;
+	}
 	background-color: transparent;
 	height: 58px;
 	.expanded .title-area {
@@ -12,7 +17,7 @@ nav.top-bar {
 	}
 	li.logo {
 		@include max-breakpoint(screen-xs) {
-			margin-left: 15px;
+			margin-left: 10px;
 		}
 	}
 	.menu-icon a span {
@@ -26,7 +31,9 @@ nav.top-bar {
 		margin-top: 15px;
 		li {
 			background-color: transparent;
-			margin-right: 10px;
+			@include min-breakpoint(screen-xs) {
+				margin-right: 10px;				
+			}
 			a {
 				padding: 0 20px;
 				text-align: center;
