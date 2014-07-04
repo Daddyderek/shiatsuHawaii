@@ -20,6 +20,10 @@ section.slide-show {
 	.slick-slide img {
 		width: 100%;
 	}
+	img.large-8.columns {
+		padding: 0;
+	}
+	// for mobile view link
 	.small-12.columns {
 		background-color: $welcomeBg;
 		font-weight: $weightLight;
@@ -29,31 +33,39 @@ section.slide-show {
 			background-color: white;
 			text-align: center;
 			a {
-				margin: 5px 0 0 20px;
+				margin-top: 5px;
+				@include font-size(25px);
 			}
 		}
-	}
-	div.slide.slick-initialized.slick-slider {
-		margin: 0 -15px 0 -15px;
-	}
-	.large-4.coulmns {
-		div.slide.slick-initialized.slick-slider {
-			margin: 0 -14px 0 -14px;
-			@include min-breakpoint(tablet-horizontal) {
-				height: 330px;			
-			}
-		}
-	}
-	.description {
-		width: 80%;
-		margin-top: 20px;
-		margin-left: 30px;
 	}
 	.arrow-right {
 		float: right;
-		margin: 18px 10px 0 0;
+		margin: 5px 5px 0 0;
 		border-top: 7px solid transparent;
 		border-bottom: 7px solid transparent;	
 		border-left: 7px solid $rightArrow;
 	}
+	.orbit-progress {
+		visibility: hidden;
+	}
+	.caption {
+		background-color: $welcomeBg;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		padding: 15px 20px;
+		@include max-breakpoint(tablet-horizontal) {
+			width: 100%;
+		}
+	}
+	.description.large-4.columns {
+		padding: 30px;			
+		@include max-breakpoint(tablet-horizontal) {
+			padding-bottom: 70px;
+		}
+	}
+	li.clearfix.row.active {
+		margin: 0;
+	}
 }
+// @include between-breakpoints(tablet-horizontal, 1097px ) {

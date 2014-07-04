@@ -1,7 +1,7 @@
 extends partials/layout
 block content
 	section.slide-show
-		strong.show-for-small-only
+		div.show-for-small-only
 			div.slide
 				div
 					img(src="/images/homepage_massage.jpg", alt="Massage Therapy")
@@ -15,46 +15,36 @@ block content
 					img(src="/images/homepage_rom.jpg", alt="Rom Therapy")
 					.small-12.columns
 						a(href="#" ) THE ROM MACHINE
-		strong.show-for-medium-up
+		div.show-for-medium-up
 			.row.full-width
-				.large-8.columns
-					div.slide
-						div
-							img(src="/images/homepage_massage.jpg", alt="Massage Therapy")
-						div
-							img(src="/images/homepage_kinesio.jpg", alt="Kinesio Therapy")
-						div
-							img(src="/images/homepage_rom.jpg", alt="Rom Therapy")
-				.large-4.columns
-					div.slide
-						div
-							.description
-								h6 THE VERY BEST IN
-								h3 Massage Therapy
-								p Since 1984, our clinic has led the way in the treatment of soft tissue pain &amp; injuries using the most effective massage therapy techniques: Shiatsu, Myofascial Release, Structural Balancing, Soft Tissue Release, &amp; Kinesio Taping.
-							.small-12.columns
-								a(href="#") SHIATSU MASSAGE
-								.arrow-right
-						div
-							.description
-								h6 THE VERY BEST IN
-								h3 Kinesio Taping
-								P Kinesio Taping is a fast &amp; effective elastic therapeutic taping method that allows us to treat a wide range of injuries using a tool that mimics our massage therapy.
-								p In 2001, we were one of the first massage clinics in Hawaii to use Kinesio Taping as part of our therapy &amp; we have led the way ever since.
-								strong.show-for-medium-up
-							.small-12.columns
-								a(href="#") KINESIO TAPING
-								.arrow-right
-
-						div
-							.description
-								h6 EXERCISE:
-								h3 The Rom Machine
-								p Want a full body workout in just 9 minutes? Sound too good to be true? The ROM Machine makes it possible! Get a fast, high intensity, &amp; low impact workout using one of the most unique exercise machines ever invented.
-							.small-12.columns
-								a(href="#" ) THE ROM MACHINE
-								.arrow-right
-
+				ul.example-orbit(data-orbit)
+					li.clearfix.row
+						img.large-8.columns.clearfix(src="/images/homepage_massage.jpg", alt="Massage Therapy")
+						.description.large-4.columns
+							h6 THE VERY BEST IN
+							h3 Massage Therapy
+							p Since 1984, our clinic has led the way in the treatment of soft tissue pain &amp; injuries using the most effective massage therapy techniques: Shiatsu, Myofascial Release, Structural Balancing, Soft Tissue Release, &amp; Kinesio Taping.
+						.caption.large-4
+							a(href="#") SHIATSU MASSAGE
+							.arrow-right
+					li.clearfix.row
+						img.large-8.columns.clearfix(src="/images/homepage_kinesio.jpg", alt="Kinesio Therapy")
+						.description.large-4.columns
+							h6 THE VERY BEST IN
+							h3 Kinesio Taping
+							P Kinesio Taping is a fast &amp; effective elastic therapeutic taping method that allows us to treat a wide range of injuries using a tool that mimics our massage therapy.
+						.caption.large-4
+							a(href="#") KINESIO TAPING
+							.arrow-right
+					li.clearfix.row
+						img.large-8.columns.clearfix(src="/images/homepage_rom.jpg", alt="Rom Therapy")
+						.description.large-4.columns
+							h6 EXERCISE:
+							h3 The Rom Machine
+							p Want a full body workout in just 9 minutes? Sound too good to be true? The ROM Machine makes it possible! Get a fast, high intensity, &amp; low impact workout using one of the most unique exercise machines ever invented.
+						.caption.large-4
+							a(href="#" ) THE ROM MACHINE
+							.arrow-right
 	section.welcome
 		.row.full-width
 			.medium-7.columns

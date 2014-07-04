@@ -45,5 +45,14 @@ section.welcome {
 		h5, h2 {
 			text-align: center;
 		}
+		h5 {
+			@include font-size(15px);
+			font-weight: $weightNormal;
+		}
+		h2 {
+			@include font-size(22px);
+			font-weight: $weightLight;
+			margin-bottom: 15px;
+		}
 	}
 }
