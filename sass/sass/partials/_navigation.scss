@@ -41,7 +41,15 @@ nav.top-bar {
 					color: white;
 				}
 				@include max-breakpoint(tablet-horizontal) {
-
+					color: $footerBg;
+					line-height: 3;
+					background-color: transparent;
+					border: none;
+					border-top: 1px solid $navLines;
+					&:hover {
+						background-color: $welcomeBg;
+						color: $footerBg;
+					}
 				}
 			}
 		}
