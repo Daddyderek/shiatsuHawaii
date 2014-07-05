@@ -6,6 +6,21 @@ section.our-team {
 	hr {
 		border-right: solid $footerFont;
 		border-width: 1px;
+		@include max-breakpoint(tablet-horizontal) {
+			margin-top: 0;
+		}
+	}
+	.hide-for-large-up {
+		h1 {
+			background-color: $welcomeBg;
+			text-align: center;
+			height: 100px;
+			margin: -19px 0 50px 0;
+			line-height: 3;
+			@include min-breakpoint(screen-sm) {
+				line-height: 2;
+			}
+		}
 	}
 	.large-8.columns {
 		h1 {
@@ -38,15 +53,6 @@ section.our-team {
 	.large-8.columns {
 		p:last-child {
 			margin-bottom: 200px;
-		}
-	}
-	@include max-breakpoint(tablet-horizontal) {
-		.large-8.columns h1 { 
-			background-color: $welcomeBg;
-			margin: -19px -88px 65px -86px;
-			text-align: center;
-			height: 100px;
-			line-height: 2;
 		}
 	}
 	@include max-breakpoint(screen-sm) {

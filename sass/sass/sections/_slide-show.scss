@@ -10,7 +10,6 @@ section.slide-show {
 		font-weight: $weightLight;
 		color: $darkGr;
 	}
-	margin-top: 10px;
 	@include min-breakpoint(screen-sm) {
 		margin-bottom: 50px;		
 	}

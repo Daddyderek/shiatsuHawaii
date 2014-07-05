@@ -15,5 +15,10 @@ section.services.slide-show {
 			@include font-size(25px);
 			margin-bottom: 25px;
 		}
+		hr {
+			@include max-breakpoint(screen-sm) {
+				margin-top: 0;
+			}
+		}
 	}
 }

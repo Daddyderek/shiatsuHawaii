@@ -2,6 +2,21 @@ section.locations {
 	hr {
 		border-right: solid $footerFont;
 		border-width: 1px;
+		@include max-breakpoint(tablet-horizontal) {
+			margin-top: 0;
+		}
+	}
+	.hide-for-large-up h1 {
+		@include max-breakpoint(tablet-horizontal) {
+			background-color: $welcomeBg;
+			text-align: center;
+			height: 100px;
+			margin: -19px 0 50px 0;
+			line-height: 2;
+			@include max-breakpoint(screen-sm) {
+				line-height: 3;
+			}
+		}
 	}
 	p, h1, h3 {
 		font-weight: $weightLight;
@@ -17,15 +32,6 @@ section.locations {
 		}
 		h3 {
 			margin-bottom: 20px;
-		}
-	}
-	@include max-breakpoint(tablet-horizontal) {
-		.large-4.columns h1 { 
-			background-color: $welcomeBg;
-			margin: -19px -88px 45px -86px;
-			text-align: center;
-			height: 100px;
-			line-height: 2;
 		}
 	}
 	@include max-breakpoint(screen-sm) {

@@ -3,17 +3,24 @@ div#navBar.row.full-width {
 		width: 100%;
 	}
 }
+nav.top-bar.expanded {
+	@include max-breakpoint(tablet-horizontal) {
+		margin-bottom: 0;
+	}
+}
 nav.top-bar {
 	@include min-breakpoint(screen-xs) {
 		margin: 3% -10px 3.5% 0;
-	}
-	@include max-breakpoint(screen-xs) {
-		margin-bottom: -15px;
 	}
 	background-color: transparent;
 	height: 58px;
 	.expanded .title-area {
 		background-color: transparent;
+	}
+	ul.title-area {
+		@include between-breakpoints(480px, 64.063em) {
+			margin-bottom: 20px;
+		}
 	}
 	li.logo {
 		@include max-breakpoint(screen-xs) {
@@ -28,7 +35,9 @@ nav.top-bar {
 		}
 	}
 	section.top-bar-section ul.right {
-		margin-top: 15px;
+		@include min-breakpoint(tablet-horizontal) {
+			margin-top: 15px;
+		}
 		li {
 			background-color: transparent;
 			@include min-breakpoint(screen-xs) {

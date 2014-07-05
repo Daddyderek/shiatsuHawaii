@@ -9,6 +9,9 @@
 	}
 }
 section.services.tabs {
+	@include between-breakpoints(40em, 64.063em) {
+		padding-top: 60px;
+	}
 	ul {
 		height: 100px;
 		margin-left: 0;
