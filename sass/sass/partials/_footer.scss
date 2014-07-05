@@ -26,4 +26,9 @@ footer {
 			}
 		}
 	}
+	@include max-breakpoint(screen-sm) {
+		li p {
+			margin-bottom: 0;
+		}
+	}
 }

@@ -2,9 +2,21 @@ section.services.explanation {
 	padding-top: 80px;
 	.medium-8.columns {
 		padding-left: 0;
+		font-weight: $weightLight;
 		.row.show-for-small-only hr {
 			border: 1px solid $lightGr;
 			margin: 0 -30px;
+		}
+		h3 {
+			padding: 20px 0;
+		}
+		.arrow-right {
+			border-top: 10px solid transparent;
+			border-bottom: 10px solid transparent;	
+			border-left: 10px solid $rightArrow;
+			@include min-breakpoint(screen-sm) {
+				visibility: hidden;
+			}
 		}
 	}
 	.medium-4.columns {
