@@ -8,6 +8,7 @@ nav.top-bar.expanded {
 		margin-bottom: 0;
 	}
 }
+
 nav.top-bar {
 	@include min-breakpoint(screen-xs) {
 		margin: 3% -10px 3.5% 0;
@@ -25,6 +26,11 @@ nav.top-bar {
 	li.logo {
 		@include max-breakpoint(screen-xs) {
 			margin-left: 10px;
+		}
+	}
+	li.has-dropdown.not-click a {
+		@include min-breakpoint(tablet-horizontal) {
+			margin-right: -15px;
 		}
 	}
 	.menu-icon a span {
