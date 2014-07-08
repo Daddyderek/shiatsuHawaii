@@ -62,6 +62,9 @@ section.slide-show {
 		@include max-breakpoint(tablet-horizontal) {
 			padding-bottom: 70px;
 		}
+		p {
+			overflow: hidden;
+		}
 	}
 	li.clearfix.row.active {
 		margin: 0;
