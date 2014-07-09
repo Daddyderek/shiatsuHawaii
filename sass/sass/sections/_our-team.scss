@@ -1,5 +1,5 @@
 section.our-team {
-	p, h1, h3, h5 {
+	p, h1, h4, h5 {
 		font-weight: $weightLight;
 		color: $darkGr;
 	}
@@ -42,7 +42,7 @@ section.our-team {
 		margin-top: 40px;
 		div {
 			padding: 20px 40px;
-			h3 {
+			h4 {
 				margin-top: -2px;
 			}
 			p:last-child {
