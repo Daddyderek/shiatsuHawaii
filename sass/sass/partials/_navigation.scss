@@ -50,6 +50,7 @@ nav.top-bar {
 				margin-right: 10px;				
 			}
 			a {
+				font-family: $baseFontFamily;
 				padding: 0 20px;
 				text-align: center;
 				@include font-size(14px);

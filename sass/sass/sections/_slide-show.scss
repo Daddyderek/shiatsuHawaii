@@ -1,9 +1,9 @@
 .arrow-right {
 	float: right;
-	margin: 5px 5px 0 0;
-	border-top: 7px solid transparent;
-	border-bottom: 7px solid transparent;	
-	border-left: 7px solid $rightArrow;
+	margin: -25px 5px 0 0;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;	
+	border-left: 10px solid $rightArrow;
 }
 section.slide-show {
 	p, h3, h6 {
@@ -17,6 +17,7 @@ section.slide-show {
 		@include font-size(14px);
 	}
 	a {
+		font-family: $baseFontFamily;
 		color: $footerBg;
 		@include font-size(14px);
 	}
@@ -33,12 +34,13 @@ section.slide-show {
 	.small-12.columns {
 		background-color: $welcomeBg;
 		font-weight: $weightLight;
-		height: 50px;
+		height: 53px;
 		line-height: 3;
 		@include max-breakpoint(screen-sm) {
 			background-color: white;
 			text-align: center;
 			a {
+				font-family: $baseFontFamily;
 				margin-top: 5px;
 				@include font-size(25px);
 			}
@@ -48,6 +50,7 @@ section.slide-show {
 		visibility: hidden;
 	}
 	.caption {
+		height: 60px;
 		background-color: $welcomeBg;
 		position: absolute;
 		bottom: 0;
@@ -55,6 +58,11 @@ section.slide-show {
 		padding: 15px 20px;
 		@include max-breakpoint(tablet-horizontal) {
 			width: 100%;
+		}
+		a {
+			@include font-size(20px);
+			font-family: $baseFontFamily;
+			display: inherit;
 		}
 	}
 	.description.large-4.columns {
